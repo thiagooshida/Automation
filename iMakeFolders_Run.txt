@@ -1,0 +1,13 @@
+@echo %off
+
+set root=C:\Users\%USERNAME%\AppData\Local\Continuum\anaconda3
+
+call %root%\Scripts\activate.bat %root%
+
+cd /d R:\RP&D\SAM\PRA\_Projects\2020
+
+cls
+
+python "_iMakeFolders.py" run
+
+pause
